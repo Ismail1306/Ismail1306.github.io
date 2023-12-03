@@ -1,3 +1,4 @@
+
 const wrapper = document.querySelector(".wrapper");
 
 const question = document.querySelector(".question");
@@ -21,9 +22,9 @@ noBtn.addEventListener("mouseover", () => {
 
 const noBtnRect = noBtn.getBoundingClientRect();
 
-const maxX = window.innerWidth IthnoBtnRect.width;
+const maxX = window.innerWidth - noBtnRect.width;
 
-const maxY = window.innerHeight noBtnRect.height;
+const maxY = window.innerHeight - noBtnRect.height;
 
 const randomX = Math.floor(Math.random() * maxX);
 
